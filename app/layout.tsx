@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { siteConfig } from "@/config/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,13 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Calculadora de custos 3D",
-  description: "Calcule o seu custo de produção e venda de produtos de forma rápida e fácil.",
+  title: {
+    default: siteConfig.name,
+    template: `%s | ${siteConfig.description}`
+  },
+  description: siteConfig.description,
   icons: [
     {
-      rel: "/calc.svg",
-      url: "/calc.svg",
-    },
+      url: '/logo.svg',
+      href: '/logo.svg '
+    }
   ]
 };
 
