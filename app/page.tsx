@@ -139,10 +139,10 @@ export default function Home() {
             </div>
             <div>
               <h1 className="text-2xl md:text-3xl font-bold tracking-tight text-white">
-                Precifica3D Pro
+                Precifica 3D 
               </h1>
               <p className="text-slate-400 text-sm mt-0.5">
-                Calculadora Profissional de Custos e Margem para Impressão 3D
+                Calculadora de Custos e Margem para Impressão 3D
               </p>
             </div>
           </div>
